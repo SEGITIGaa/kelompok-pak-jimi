@@ -1,0 +1,64 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.form-container{
+    background-color: #f4f4f8;
+    width: 40%;
+    height: 500px;
+    border-radius: 32px;
+    position: relative;
+    top: 90px;
+    left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.form-container form input{
+    border: #ff724c 2px solid;
+    padding: 3%;
+    margin: 5px;
+    width: 85%;
+    border-radius: 8px;
+}
+.form-container form input::placeholder{
+    color: black;
+}
+.form-container form select#agama, select#gender, select#pendidikan {
+    border: #ff724c 2px solid;
+    padding: 3%;
+    margin: 5px;
+    width: 92%;
+    border-radius: 8px;
+}
+.form-container form select #select1,#select2{
+    border: #ff724c 2px solid;
+    padding: 3%;
+    display: inline-flex;
+}
+.form-container form select#select1{
+    width: 48%;
+    margin-left: 8px;
+}
+.form-container form select#select2{
+    width: 40%;
+    margin-right: -16px;
+}
+.form-container form button{
+    padding: 8px 30px;
+    margin-left: 75px;
+    border: none;
+    border-radius: 20px;
+    color: #fdbf50;
+    background-color: #2A2C41;
+}
+.form-container form button:hover{
+    color: #2A2C41;
+    background-color: #fdbf50;
+    transition: all 0.5s;
+}
