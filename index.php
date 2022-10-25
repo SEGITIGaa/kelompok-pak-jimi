@@ -8,9 +8,8 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-
         <div class="form-container">
-            <form action="action.php" method="post">
+            <form action="insert.php" method="post">
                 <table >
                     <tr>
                         <td>
@@ -56,7 +55,7 @@
                     </tr>
                    <tr>
                     <td>
-                    <h3>Pendidikan & Prestasi</h3>
+                    <h3>Pendidikan & presetasi</h3>
                     </td>
                    </tr>
                     <tr>
@@ -71,7 +70,7 @@
                     </tr>
                     <tr>
                         <td>
-                        <input type="text" name="presrasi" id="" placeholder="prestasi">
+                        <input type="text" name="prestasi" id="" placeholder="prestasi">
                         </td>
                     </tr>
                     <tr>
@@ -82,6 +81,5 @@
                 </form>
             </table>
         </div>
-
     </body>
 </html>
