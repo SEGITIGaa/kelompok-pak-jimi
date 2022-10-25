@@ -13,7 +13,7 @@
                 <table >
                     <tr>
                         <td>
-                            <h3>Biodata</h3>
+                            <h1>Biodata</h1>
                         </td>
                     </tr>
                     <tr>
@@ -55,7 +55,7 @@
                     </tr>
                    <tr>
                     <td>
-                    <h3>Pendidikan & presetasi</h3>
+                    <h4>Pendidikan & presetasi</h4>
                     </td>
                    </tr>
                     <tr>
@@ -73,11 +73,16 @@
                         <input type="text" name="prestasi" id="" placeholder="prestasi">
                         </td>
                     </tr>
+                    <div class="btn">
                     <tr>
                         <td>
-                            <button type="submit"> submit </button>
+                            <button type="submit" id="submit"> submit </button>
+                            <button>
+                                <a href="./tabel.php">Lihat tabel</a>
+                            </button>
                         </td>
                     </tr>
+                    </div>
                 </form>
             </table>
         </div>
