@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tabel data</title>
+        <link rel="stylesheet" href="tabel.css">
     </head>
     <body>
 <?php
@@ -26,6 +27,7 @@ $users = tampilkan('SELECT * FROM data');
 ?>
 
         <form action="" method="post">
+            <h1>Tabel data</h1>
             <table border="2" cellspacing="0" cellpadding="10">
                 <tr>
                     <th>id</th>
@@ -53,6 +55,7 @@ $users = tampilkan('SELECT * FROM data');
                     <td><?php echo $user['prestasi'];?></td>
                     <td>
                         <button type="submit" name="delete" onclick="return confirm('Konfirmasi');window.location.href=window.location.href" value="<?php echo $user['id'];?>">Delete</button>
+                        <button type="submit" name="edit" id="edit">Edit</button>
                     </td>
                 </tr>
                 <?php $id++ ?>
