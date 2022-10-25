@@ -18,22 +18,22 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" name="nama" id="" placeholder="nama">
+                            <input type="text" name="nama" id="" placeholder="nama" required>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" name="usia" id="" placeholder="usia">
+                            <input type="text" name="usia" id="" placeholder="usia" required>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" name="alamat" id="" placeholder="alamat">
+                            <input type="text" name="alamat" id="" placeholder="alamat" required>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                        <select name="agama" id="agama">
+                        <select name="agama" id="agama" required>
                                 <option value="" disabled="disabled" selected="selected">agama</option>
                                 <option value="islam"> islam</option>
                                 <option value="khatolik">khatolik</option>
@@ -46,7 +46,7 @@
                     </tr>
                     <tr>
                         <td>
-                        <select name="gender" id="gender">
+                        <select name="gender" id="gender" required>
                                 <option value="" disabled="disabled" selected="selected">jenis kelamin</option>
                                 <option value="pria">pria</option>
                                 <option value="wanita">wanita</option>
@@ -60,7 +60,7 @@
                    </tr>
                     <tr>
                         <td>
-                            <select name="pendidikan" id="pendidikan">
+                            <select name="pendidikan" id="pendidikan" required>
                                 <option value="" disabled="disabled" selected="selected">pendidikan akhir</option>
                                 <option value="sma">sma</option>
                                 <option value="smp">smp</option>
@@ -70,7 +70,7 @@
                     </tr>
                     <tr>
                         <td>
-                        <input type="text" name="prestasi" id="" placeholder="prestasi">
+                        <input type="text" name="prestasi" id="" placeholder="prestasi" required>
                         </td>
                     </tr>
                     <div class="btn">
@@ -80,7 +80,6 @@
                             <button>
                                 <a href="tabel.php">Lihat tabel</a>
                             </button>
-                             <button type="submit" name="edit" >Edit</button>
                         </td>
                     </tr>
                     </div>
