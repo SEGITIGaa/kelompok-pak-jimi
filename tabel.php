@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tabel data</title>
         <link rel="stylesheet" href="tabel.css">
+        <link rel="stylesheet" href="./fontawesome-free-6.2.0-web/./css/./all.css"/>
     </head>
     <body>
 <?php
@@ -28,6 +29,9 @@ $users = tampilkan('SELECT * FROM data');
 
         <form action="" method="post">
             <h1>Tabel data</h1>
+            <button class="btn-back">
+                <a href="./index.php"> kembali </a>
+            </button>
             <table border="2" cellspacing="0" cellpadding="10">
                 <tr>
                     <th>id</th>
@@ -54,8 +58,14 @@ $users = tampilkan('SELECT * FROM data');
                     <td><?php echo $user['pendidikan_akhir'];?></td>
                     <td><?php echo $user['prestasi'];?></td>
                     <td>
-                        <button type="submit" name="delete" onclick="return confirm('Konfirmasi');window.location.href=window.location.href" value="<?php echo $user['id'];?>">Delete</button>
-                        <button type="submit" name="edit" id="edit">Edit</button>
+                        <button type="submit" name="delete" onclick="return confirm('Konfirmasi');window.location.href=window.location.href" value="<?php echo $user['id'];?>">
+                        <i class="fa-solid fa-trash-can"></i>
+                        Delete item
+                        </button>
+                        <button type="submit" name="edit" id="edit">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                        Edit
+                        </button>
                     </td>
                 </tr>
                 <?php $id++ ?>
