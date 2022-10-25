@@ -52,20 +52,30 @@ $users = tampilkan('SELECT * FROM data');
                     <td><?php echo $user['pendidikan_akhir'];?></td>
                     <td><?php echo $user['prestasi'];?></td>
                     <td>
-                        <button type="submit" name="delete" value="<?php echo $user['id'];?>">Delete</button>
+                        <button type="submit" name="delete" onclick="return confirm('Konfirmasi');window.location.href=window.location.href" value="<?php echo $user['id'];?>">Delete</button>
                     </td>
                 </tr>
                 <?php $id++ ?>
                 <?php endforeach; ?>
             </table>
         </form>
-        <?php
-    $delete= $_POST['delete'];
-    $delete= (int)$delete;
+    <?php
+    error_reporting(0);
+    $delete = $_POST['delete'];
+    $delete = (int)$delete;
 
-    $sqlDel = "DELETE FROM data WHERE id= $delete";
-    $hapus = mysqli_query($koneksi,$sqlDel);
-    
+    $sql = "SELECT nama FROM data WHERE id = $delete";
+    $result = mysqli_query($koneksi, $sql);
+
+    if(!empty($delete)){
+        $stmt = $koneksi->prepare("DELETE FROM data WHERE id = $delete");
+        $stmt->execute();
+        echo "<br><br><br>";
+        while ($row = mysqli_fetch_assoc($result))
+        {
+            header("Refresh:0");
+        }
+    }
 
     ?>
     </body>
