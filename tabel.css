@@ -52,3 +52,7 @@ form table tr td button#edit{
     margin: 5px;
     border: none;
 }
+form table tr td button#edit a{
+    text-decoration: none;
+    color: #fff;
+}
