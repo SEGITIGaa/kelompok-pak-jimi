@@ -64,7 +64,7 @@ $users = tampilkan('SELECT * FROM data');
                         </button>
                         <button type="submit" name="edit" id="edit">
                         <i class="fa-regular fa-pen-to-square"></i>
-                        Edit
+                        <a href="edit.php"> Edit</a>
                         </button>
                     </td>
                 </tr>
