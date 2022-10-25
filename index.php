@@ -78,7 +78,7 @@
                         <td>
                             <button type="submit" id="submit"> submit </button>
                             <button>
-                                <a href="./tabel.php">Lihat tabel</a>
+                                <a href="tabel.php">Lihat tabel</a>
                             </button>
                         </td>
                     </tr>
@@ -100,7 +100,9 @@ $prestasi = $_POST['prestasi'];
 
 $sqlInput = "INSERT INTO data(nama,usia,alamat,agama,jenis_kelamin,pendidikan_akhir,prestasi) VALUES('$nama', '$usia', '$alamat', '$agama', '$gender', '$pendidikan', '$prestasi')";
 
-$insert = mysqli_query($kon, $sqlInput);
+if(!empty($nama)){
+    $insert = mysqli_query($kon, $sqlInput);
+}
 ?>
     </body>
 </html>
