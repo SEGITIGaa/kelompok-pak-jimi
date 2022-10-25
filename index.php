@@ -80,6 +80,7 @@
                             <button>
                                 <a href="tabel.php">Lihat tabel</a>
                             </button>
+                             <button type="submit" name="edit" >Edit</button>
                         </td>
                     </tr>
                     </div>
