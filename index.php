@@ -56,7 +56,7 @@
                     </tr>
                    <tr>
                     <td>
-                    <h3>Pendidikan & gender</h3>
+                    <h3>Pendidikan & Prestasi</h3>
                     </td>
                    </tr>
                     <tr>
