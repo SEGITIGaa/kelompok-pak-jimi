@@ -58,7 +58,7 @@ $users = tampilkan('SELECT * FROM data');
                     <td><?php echo $user['pendidikan_akhir'];?></td>
                     <td><?php echo $user['prestasi'];?></td>
                     <td>
-                        <button type="submit" name="delete" onclick="return confirm('Konfirmasi');window.location.href=window.location.href" value="<?php echo $user['id'];?>">
+                        <button type="submit" name="delete" onclick="return confirm('Konfirmasi');" value="<?php echo $user['id'];?>">
                         <i class="fa-solid fa-trash-can"></i>
                         Delete item
                         </button>
