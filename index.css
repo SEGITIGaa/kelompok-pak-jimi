@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     margin: 0%;
     padding: 0%;
     font-family: 'Poppins', sans-serif;
 }
 .form-container{
-    background-color: #f4f4f8;
+    background-color: #d6d6e7;
     width: 40%;
-    height: 500px;
+    height: 550px;
     border-radius: 32px;
     position: relative;
     top: 90px;
@@ -15,6 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 16px 40px rgba(112, 144, 176, 20%);
 }
 .form-container form{
     display: flex;
@@ -52,15 +54,37 @@
     margin-right: -16px;
 }
 .form-container form button{
-    padding: 8px 30px;
-    margin-left: 75px;
+    padding: 6px 30px;
     border: none;
+    border-radius: 20px;
     border-radius: 20px;
     color: #fdbf50;
     background-color: #2A2C41;
+}
+.form-container form button a{
+    text-decoration: none;
+    color: #fdbf50;
+}
+.form-container form button a:hover{
+    color: #2A2C41;
+}
+.form-container form button#submit{
+    padding: 5px 30px;
+    background: none;
+    border:  #2A2C41 2px solid;
+    color: #2A2C41;
+
+}
+.form-container form button#submit:hover{
+    background-color: #fdbf50;
 }
 .form-container form button:hover{
     color: #2A2C41;
     background-color: #fdbf50;
     transition: all 0.5s;
+}
+.form-container form .btn{
+    display: flex;
+    border: none;
+    
 }
