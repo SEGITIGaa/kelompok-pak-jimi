@@ -7,11 +7,9 @@
         <title>Tabel data</title>
     </head>
     <body>
-        <?php
+<?php
 
 $koneksi = mysqli_connect('localhost','root','','kelompok');
-
-echo 'koneksi berhasil <br> <br>' ;
 
 function tampilkan($tampilkan){
    global $koneksi;
@@ -23,7 +21,7 @@ function tampilkan($tampilkan){
    return $rows;
 }
 ?>
-        <?php
+<?php
 $users = tampilkan('SELECT * FROM data');
 ?>
 
@@ -45,17 +43,16 @@ $users = tampilkan('SELECT * FROM data');
                 <?php foreach($users as $user) :?>
                 <?php error_reporting(E_ALL ^E_WARNING)?>
                 <tr>
-                    <td>
-                        <?= $id;?></td>
+                    <td><?php echo $user['id'];?></td>
                     <td><?php echo $user['nama'];?></td>
                     <td><?php echo $user['usia']." tahun ";?></td>
                     <td><?php echo $user['alamat'];?></td>
                     <td><?php echo $user['agama'];?></td>
-                    <td><?php echo $user['gender'];?></td>
-                    <td><?php echo $user['pendidikan'];?></td>
+                    <td><?php echo $user['jenis_kelamin'];?></td>
+                    <td><?php echo $user['pendidikan_akhir'];?></td>
                     <td><?php echo $user['prestasi'];?></td>
                     <td>
-                        <button type="submit" name="delete" value="<?= $id;?>"></button>
+                        <button type="submit" name="delete" value="<?php echo $user['id'];?>">Delete</button>
                     </td>
                 </tr>
                 <?php $id++ ?>
@@ -67,6 +64,8 @@ $users = tampilkan('SELECT * FROM data');
     $delete= (int)$delete;
 
     $sqlDel = "DELETE FROM data WHERE id= $delete";
+    $hapus = mysqli_query($koneksi,$sqlDel);
+    
 
     ?>
     </body>
